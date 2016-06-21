@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form action="test_page.php" method="GET">
+    <input type="text" name="a1" id="sulat1" onkeyup="magginput()"></input><br><br>
+    <input type="text" name="a2" id="sulat2" onkeyup="magginput()"></input><br><br>
+    <input type="text" name="a3" id="sulat3" onkeyup="magginput()"></input><br><br>
+    <input type="text" name="a4" id="sulat4" onkeyup="magginput()"></input><br><br>
+    <input type="text" name="a5" id="sulat5" onkeyup="magginput()"></input>
+    </form>
+    <script>
+    function magginput(){
+    var a = document.getElementById("sulat1");
+    var e = document.getElementsByTagName("INPUT");
+    for(var x = 0; x < e.length; x++){
+    e[x].value = a.value;
+    }
+    }
+    </script>
+  </body>
+</html>
